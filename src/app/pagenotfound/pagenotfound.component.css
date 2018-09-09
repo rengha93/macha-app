@@ -1,0 +1,51 @@
+img{
+  width: 50%;
+  height: 18%;
+}
+.pnf{
+  width: 50%;
+  padding-top:150px;
+  padding-left: 150px;
+  position: relative;
+}
+h1{
+  font-size: 120px;
+}
+.oops-msg{
+  font-size: 40px;
+}
+.redirect-oops a{
+text-decoration: none;
+font-size: 20px;
+}
+
+@media only screen and (max-width:768px) {
+  img{
+    width: 50%;
+    height: 18%;
+  }
+  .pnf{
+    width: 50%;
+    padding-top:100px;
+    padding-left: 80px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  img{
+    padding-left: 4px;
+    padding-top: 80px;
+    max-width:60%;
+    height: 18%;
+    position: relative;
+    margin-right: 0px;
+  }
+  .pnf{
+    margin-left: 0px;
+    width: 20%;
+    padding-left: 0px;
+    padding-top:60px;
+    position: relative;
+  }
+}

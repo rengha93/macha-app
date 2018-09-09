@@ -1,0 +1,452 @@
+.left-container{
+  max-width:20%;
+  padding-left: 80px;
+  /* border: 1px solid red; */
+  background-color: #fff;
+  /* border-right:0.2px solid #71749c; */
+  position: relative;
+  margin: 0px;
+}
+.filter-main{
+  display:flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-right: 8px;
+  border-right:0.2px solid #71749c;
+}
+h4{
+  text-align: center;
+  font-weight: 200px;
+  color:#333554;
+}
+@media only screen and (min-width:575px) {
+  .exx{
+    display: none;
+  }
+}
+@media only screen and (max-width:575px) {
+  .exx{
+    display: show;
+    text-align: center;
+    width:100%;
+  }
+  button .panel{
+    position: relative;
+  }
+  .left-container{
+    display: none;
+  }
+  .right-container{
+
+  }
+  .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: center;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+  }
+  .shirt-subfilter li{
+    list-style-type: none;
+    align-items: left;
+    padding: 0px;
+    max-width: 100%;
+  }
+  .panel {
+      padding: 0 18px;
+      background-color: white;
+      overflow: hidden;
+  }
+  .shirt-subfilter{
+    position: relative;
+  }
+  .filter-body div{
+    /* border:1px solid green; */
+  }
+
+}
+@media only screen and (min-width:768px) and (max-width:858px) {
+  /* .exx{
+    display: none;
+  } */
+  .left-container{
+    width:30%;
+    padding-left: 0px;
+    /* border: 1px solid red; */
+    /* background-color: #fff; */
+    /* border-right:0.2px solid #71749c; */
+    position: relative;
+    /* margin: 0px; */
+  }
+  .filter-main{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-right: 8px;
+    padding-left: 0px;
+    border-right:0.2px solid #71749c;
+  }
+  .filter-body{
+    /* border:1px solid green; */
+  }
+  .filter-body div{
+    text-align: left;
+  }
+  .right-container{
+    padding-left: 10px;
+    background-color: #fff;
+    position: relative;
+    /* margin-right: 30px; */
+    width:50%;
+    text-align: right;
+    /* border:1px solid red; */
+  }
+  .filter-main-right{
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-right: 8px;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    max-width:80%;
+  }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: calc(inherit/3);
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    padding-right: 16px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    outline: none;
+    /* border:1px solid red; */
+  }
+
+}
+
+@media only screen and (min-width:992px){
+  /* .exx{
+    display: none;
+  } */
+  .left-container{
+    max-width:40%;
+    padding-left: 10px;
+    /* border: 1px solid red; */
+    /* background-color: #fff; */
+    /* border-right:0.2px solid #71749c; */
+    position: relative;
+    /* margin: 0px; */
+  }
+
+  .right-container{
+    padding-left: 10px;
+    background-color: #fff;
+    position: relative;
+    /* margin-right: 30px; */
+    width:80%;
+    text-align: right;
+    /* border:1px solid red; */
+  }
+  .filter-main-right{
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-right: 8px;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    max-width:80%;
+  }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: calc(inherit/3);
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    padding-right: 16px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    outline: none;
+    /* border:1px solid red; */
+  }
+
+}
+.filter-head,.filter-body{
+  /* border: 1px solid green; */
+}
+.filter-list li{
+  list-style-type: none;
+  padding-left: 0px;
+}
+.subfilhead::before{
+  content: "+   ";
+  font-weight: bold;
+}
+.subfilhead:active::before{
+  content: "-   ";
+  font-weight: bold;
+}
+.subfilhead{
+  color:#45607b;
+}
+.subfilhead:hover{
+  cursor: pointer;
+}
+.subfilter-header{
+  padding-bottom: 6px;
+}
+.subfilter-body ul li{
+  list-style-type: none;
+}
+.shirt-subfilter{
+  padding-left: 0px;
+}
+label{
+  padding-left: 6px;
+  color: #71749c;
+  font-weight: lighter;
+}
+.s1 input{
+  color:#71749c;
+  background-color: transparent;
+}
+.collapsible {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.collapsible:after {
+  content: '\002B';
+}
+
+.right-container{
+  padding-left: 80px;
+  background-color: #fff;
+  position: relative;
+  margin-right: 30px;
+  max-width:80%;
+  /* border:1px solid red; */
+}
+.filter-main-right{
+  display:flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding-right: 8px;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  max-width:100%;
+}
+/* the below media query is used when max-width is 992px ., ie apple screen */
+@media only screen and (max-width:992px) {
+  /* .exx{
+    display: none;
+  } */
+  .left-container{
+    max-width:20%;
+    padding-left: 0px;
+     /* border: 1px solid red; */
+    background-color: #fff;
+    /* border-right:0.2px solid red; */
+    position: relative;
+    margin: 0px;
+    text-align: left;
+  }
+  .right-container{
+    padding-left: 50px;
+    background-color: #fff;
+    position: relative;
+    /* margin-right: 30px; */
+    max-width:80%;
+    text-align: right;
+     /* border:1px solid red; */
+  }
+  .filter-main-right{
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-right: 8px;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+     /* max-width:100%; */
+  }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: calc(inherit/3);
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    padding-right: 16px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    outline: none;
+    /* border:1px solid red; */
+  }
+}
+
+/* //this beow media query is when max sscreen size is 768px */
+@media only screen and (max-width:768px) {
+  /* .exx{
+    display: none;
+  } */
+  .left-container{
+    max-width:40%;
+    padding-left: 30px;
+     /* border: 1px solid red; */
+    background-color: #fff;
+    /* border-right:0.2px solid red; */
+    position: relative;
+    margin: 0px;
+    text-align: left;
+  }
+  .right-container{
+    padding-left: 70px;
+    background-color: #fff;
+    position: relative;
+    /* margin-right: 30px; */
+    max-width:60%;
+    text-align: right;
+    /* border:1px solid red; */
+  }
+  .filter-main-right{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-right: 8px;
+    flex-wrap: wrap;
+  }
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: calc(inherit/3);
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    padding-right: 16px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    outline: none;
+    /* border:1px solid red; */
+  }
+}
+
+/* this following code is for fitting the image in card container */
+@media only screen and (max-width:700px) {
+  /* .exx{
+    display: none;
+  } */
+  .left-container{
+    /* max-width:40%; */
+    padding-left: 30px;
+     /* border: 1px solid red; */
+    background-color: #fff;
+    /* border-right:0.2px solid red; */
+    position: relative;
+    margin: 0px;
+    text-align: left;
+  }
+  .right-container{
+    padding-left: 50px;
+    background-color: #fff;
+    position: relative;
+    /* margin-right: 30px; */
+    max-width:100%;
+    text-align: right;
+    /* border:1px solid red; */
+  }
+  .filter-main-right{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-right: 8px;
+    flex-wrap: wrap;
+  }
+  /* .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    /* max-width: calc(inherit/3); */
+    /* text-align: center;
+    font-family: arial;
+    position: relative;
+    padding-right: 16px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    outline: none; */
+    /* border:1px solid red; */
+  /* } */
+  .card img{
+    width: 250px;
+    height:200px;
+  }
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: calc(inherit/3);
+  text-align: center;
+  font-family: arial;
+  position: relative;
+  padding-right: 16px;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-top: 8px;
+  outline: none;
+  /* border:1px solid red; */
+}
+.card::after{
+  content: "";
+}
+/* .card img{
+  width: 300px;
+  height:285px;
+} */
+
+.card img{
+  width: 300px;
+  height:285px;
+}
+.card img:hover{
+  /* width: 300px;
+  height:285px; */
+  opacity: 0.5;
+}
+.price {
+  color: #44637b;
+  font-size: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 20px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #44637b;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+.pddesc{
+  color:#293948;
+}
+.pdtitle{
+  font-size: 16px;
+  color: #142e48;
+}

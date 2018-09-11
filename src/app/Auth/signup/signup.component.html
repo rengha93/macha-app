@@ -1,0 +1,38 @@
+<div class="signup-container">
+    <h1>Sign Up</h1>
+    <form (ngSubmit)="onSignup()" #f=ngForm>
+      <div class="form-group">
+          <p>Email</p>
+          <input type="email"
+          id="username"
+          class="form-control"
+          placeholder="Enter Username"
+          ngModel
+          name="email"
+          required
+          #n="ngModel">
+      </div>
+      <span class="help-block highlight-error" *ngIf="!n.valid && n.touched"><i>Please enter valid username</i></span>
+      <div class="form-group">
+            <p>Password</p>
+            <input type="password"
+            id="password"
+            class="form-control"
+            name="password"
+            placeholder="Enter Password"
+            minlength="6"
+            ngModel
+            required
+            #p="ngModel">
+      </div>
+      <span class="help-block highlight-error" *ngIf="!p.valid && p.touched"><i>Please enter the password</i></span>
+      <br>
+      <button type="submit" value="Sign Up" [disabled]="!f.valid">Sign Up</button>
+      <br>
+      <a routerLink="/login" routerLinkActive="active">Already have an account</a>
+    </form>
+    <div class="sig" *ngIf="scsmsg">
+        <p>SignedUp successfully</p>
+        <a routerLink="/login" routerLinkActive="active">Login</a>
+    </div>
+</div>

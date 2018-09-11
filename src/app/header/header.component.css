@@ -177,4 +177,17 @@ div .breakin{
   .mobi{
     display: none;
   }
+  .trick{
+    display:none;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .trick{
+    display:inline-block;
+    padding-bottom: 8px;
+  }
+  .trick a{
+        text-decoration: none;
+  }
 }

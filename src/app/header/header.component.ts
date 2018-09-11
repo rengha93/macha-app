@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../Auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -6,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  loginflg: boolean;
+  //loginflg=true;
+  constructor(private authService:AuthService) { }
 
   ngOnInit() {
+  }
 
+  onlogout(){
+    this.authService.logout();
+    this.loginflg = this.authService.isAuthenticated();
+    console.log("after loggiing out flag value"+this.loginflg);
   }
 
 }

@@ -42,7 +42,7 @@ h1{
 
 .login-container input{
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .login-container input[type="text"], input[type="password"]{
@@ -50,10 +50,11 @@ h1{
   border-bottom: 1px solid #d8d8d8;
   background: transparent;
   outline: none;
-  height:40px;
+  height:30px;
   font-size: 16px;
+  padding-bottom: 0px;
 }
-.login-container input[type="submit"]{
+/* .login-container input[type="submit"]{
   border:none;
   outline: none;
   height: 40px;
@@ -66,7 +67,7 @@ h1{
 cursor: pointer;
 background:#9387a9;
 color: #000;
-}
+} */
 .login-container a{
   text-decoration: none;
   font-size: 12px;
@@ -75,4 +76,33 @@ color: #000;
 }
 .login-container a:hover{
   color: #ffc107;
+}
+
+.login-container button{
+  width:100%;
+  border:none;
+  outline: none;
+  height: 40px;
+  background: #3a4086;
+  color:#fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#username.ng-invalid.ng-touched{
+  border:1px solid red;
+}
+#password.ng-invalid.ng-touched{
+  border:1px solid red;
+}
+.highlight-error{
+  color:red;
+  font-size: 16px;
+}
+.logincheck{
+  color:#05c330;
+  text-align: center;
+}
+.logincfail{
+  color:red;
+  text-align: center;
 }

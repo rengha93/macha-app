@@ -172,6 +172,8 @@ div .breakin{
   .shopping-cart{
     display: none;
   }
+  /* newly added on 2th sep */
+
 }
 @media only screen and (min-width:768px) {
   .mobi{
@@ -190,4 +192,13 @@ div .breakin{
   .trick a{
         text-decoration: none;
   }
+
+  /* .dropdown:hover .dropdown-menu {
+      display: inline;
+      margin-top: 0;
+      background-color: #fff;
+   }
+   .dropdown-toggle::after{
+     display: none;
+   } */
 }

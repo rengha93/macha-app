@@ -58,3 +58,8 @@
 .closing{
     text-align: center;
 }
+.footer-container{
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}

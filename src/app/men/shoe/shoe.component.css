@@ -53,12 +53,8 @@ h4{
   .shirt-subfilter li{
     list-style-type: none;
     align-items: left;
-    padding-left: 0px;
+    padding: 0px;
     max-width: 100%;
-  }
-  .shirt-subfilter li input{
-    padding-left: 0px;
-    align-items: flex-start;
   }
   .panel {
       padding: 0 18px;
@@ -181,7 +177,6 @@ h4{
     margin-top: 8px;
     outline: none;
     /* border:1px solid red; */
-
   }
 
 }
@@ -297,6 +292,9 @@ label{
     outline: none;
     /* border:1px solid red; */
   }
+  /* .card::after{
+    content: "";
+  } */
 }
 
 /* //this beow media query is when max sscreen size is 768px */
@@ -455,45 +453,4 @@ label{
 .pdtitle{
   font-size: 16px;
   color: #142e48;
-}
-.prdt-filter{
-background-color: #f9f9f9;
-}
-.prdt-filter input[type="text"]{
-  position:relative;
-  height:20px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border-radius: 16px;
-  border-width: 0.8px;
-  border-color: #71749c;
-  margin-left: 80%;
-  margin-bottom: 8px;
-}
-
-@media only screen and (max-width:875px){
-  .prdt-filter input[type="text"]{
-    position:relative;
-    height:20px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border-radius: 16px;
-    border-width: 0.8px;
-    border-color: #71749c;
-    margin-left: 70%;
-    margin-bottom: 8px;
-  }
-}
-
-@media only screen and (max-width:575px) {
-  .prdt-filter input[type="text"]{
-    position: relative;
-    height: 100%;
-    width:50%;
-    margin-left: 25%;
-    text-align: center;
-  }
-  .prdt-filter input[type="text"]:focus{
-    border:none;
-  }
 }

@@ -1,3 +1,7 @@
+<app-breadcrumb></app-breadcrumb>
+  <div class="prdt-filter">
+    <input type="text" name="search" [(ngModel)]="filterText" placeholder="search">
+  </div>
 <div class="row">
   <div class="exx">
   <button class="accordion" data-toggle="collapse" data-target="#i1">SHIRTS</button>
@@ -193,74 +197,24 @@
       <!-- <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
       </p> -->
-      <div class="filter-main-right">
-      <div class="card">
-              <img src="src\assets\images\r1.jpg" alt="ranbir">
-              <p class="pdtitle"><b>Allen Solly</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-
-      <div class="card">
-              <img src="src\assets\images\dq2.jpg" alt="ranbir">
-              <p><b>Espirit</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-
-      <div class="card">
-              <img src="src\assets\images\srk1.jpg" alt="ranbir">
-              <p><b>Van Husen</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-
-
-      <div class="card">
-              <img src="src\assets\images\f1.jpg" alt="ranbir">
-              <p class="pdtitle"><b>Allen Solly</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-
-      <div class="card">
-              <img src="src\assets\images\vtv1.jpg" alt="ranbir">
-              <p><b>Espirit</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-
-      <div class="card">
-              <img src="src\assets\images\d1.jpg" alt="ranbir">
-              <p><b>Van Husen</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-
-      <div class="card">
-              <img src="src\assets\images\vtv1.jpg" alt="ranbir">
-              <p><b>Espirit</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-      <div class="card">
-              <img src="src\assets\images\vtv1.jpg" alt="ranbir">
-              <p><b>Espirit</b></p>
-              <p class="price">1200</p>
-              <p class="pddesc">Plain Black Shirt</p>
-              <p><button>Add to Cart</button></p>
-      </div>
-
+      <div *ngIf="temp == 'men'" class="filter-main-right">
+        <div class="card" *ngFor="let p of product|search:filterText">
+                <img src={{p.img}} alt="ranbir">
+                <p class="pdtitle"><b>{{p.name}}</b></p>
+                <p class="price">{{p.price | currency:'INR':true}}</p>
+                <p class="pddesc">{{p.description}}</p>
+                <p><button>Add to Cart</button></p>
+        </div>
     </div>
+      <router-outlet></router-outlet>
   </div>
+
+
 </div>
+<!-- <div *ngFor="let p of product">
+  <p>{{p.name}}</p>
+</div> -->
+<!-- <router-outlet></router-outlet> -->
 <app-footer></app-footer>
 <!-- <p>
   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum

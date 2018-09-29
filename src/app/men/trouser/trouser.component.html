@@ -1,0 +1,9 @@
+<div  class="filter-main-right">
+<div class="card" *ngFor="let p of product">
+        <img src={{p.img}} alt="ranbir">
+        <p class="pdtitle"><b>{{p.name}}</b></p>
+        <p class="price">{{p.price | currency:'INR':true}}</p>
+        <p class="pddesc">{{p.description}}</p>
+        <p><button>Add to Cart</button></p>
+</div>
+</div>

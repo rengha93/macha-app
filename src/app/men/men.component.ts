@@ -79,5 +79,16 @@ export class MenComponent implements OnInit,OnDestroy {
     })
   }
 
+  setPage(){
     this.productservice.currentMessage.subscribe(x=>{
+      this.temp = x;
+      console.log("value from service::"+x)
+    });
+  }
+
+  // rMsg($event){
+  //   this.msg = $event;
+  // }
+
+
 }
